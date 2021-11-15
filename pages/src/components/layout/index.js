@@ -1,6 +1,6 @@
 import Header from "../header";
 import Footer from "../footer";
-import About from "../../../about";
+
 function Layout({ children }) {
   return (
     <div className="main">
