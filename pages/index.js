@@ -1,17 +1,6 @@
 import Head from "next/head";
 import Layout from "./src/components/layout";
 import Image from "next/image";
-import code from "../public/imgs/code.jpg";
-import me from "../public/imgs/me.jpg";
-import Leewayz from "../public/imgs/index.png";
-import PetStore from "../public/imgs/pet.png";
-import VideoGame from "../public/imgs/videogame.png";
-import Movie from "../public/imgs/react.png";
-import Java from "../public/imgs/java.jpg";
-import Tool from "../public/imgs/unp.png";
-import Student from "../public/imgs/moses.png";
-import Product from "../public/imgs/justinem.png";
-import LifeStyle from "../public/imgs/chris.png";
 
 export default function Home() {
   return (
@@ -23,7 +12,7 @@ export default function Home() {
           <div className="lg:w-4/6 mx-auto">
             <div className="rounded-lg h-64 overflow-hidden">
               {/* <div className="object-cover object-center h-full w-full"> */}
-              <Image alt="content" src={code} />
+              <Image alt="content" src="/code.jpg" width={5000} height={1500} />
               {/* </div> */}
             </div>
             <div className="flex flex-col sm:flex-row mt-10">
@@ -32,7 +21,9 @@ export default function Home() {
                   <Image
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src={me}
+                    src="/me.jpg"
+                    width={50}
+                    height={50}
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
@@ -72,7 +63,13 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Leewayz} rel="icon" />
+                  <Image
+                    alt="gallery"
+                    src="/capstone.png"
+                    rel="icon"
+                    width={5000}
+                    height={2900}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -94,7 +91,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={VideoGame} />
+                  <Image
+                    alt="gallery"
+                    src="/videogame.png"
+                    width={5000}
+                    height={2600}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 ">
@@ -115,7 +117,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={PetStore} />
+                  <Image
+                    alt="gallery"
+                    src="/pet-shops.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -136,7 +143,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Movie} />
+                  <Image
+                    alt="gallery"
+                    src="/react.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -159,7 +171,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Java} />
+                  <Image
+                    alt="gallery"
+                    src="/java.jpg"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -181,7 +198,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Tool} />
+                  <Image
+                    alt="gallery"
+                    src="/unp.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -203,7 +225,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Student} />
+                  <Image
+                    alt="gallery"
+                    src="/moses.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -214,6 +241,10 @@ export default function Home() {
                   </h1>
                   <p className="leading-relaxed">
                     Created a responsive static website. Technologies: HTML5
+                    CSS, and JavaScript Created a responsive static website.
+                    Technologies: HTML5 CSS, and JavaScript Created a responsive
+                    static website. Technologies: HTML5 CSS, and JavaScript
+                    Created a responsive static website. Technologies: HTML5
                     CSS, and JavaScript
                   </p>
                 </div>
@@ -222,7 +253,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={Product} />
+                  <Image
+                    alt="gallery"
+                    src="/justinem.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -233,6 +269,10 @@ export default function Home() {
                   </h1>
                   <p className="leading-relaxed">
                     Created a responsive static website. Technologies: HTML5
+                    CSS, and JavaScript Created a responsive static website.
+                    Technologies: HTML5 CSS, and JavaScript Created a responsive
+                    static website. Technologies: HTML5 CSS, and JavaScript
+                    Created a responsive static website. Technologies: HTML5
                     CSS, and JavaScript
                   </p>
                 </div>
@@ -241,7 +281,12 @@ export default function Home() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <div className="absolute inset-0 w-full h-full object-cover object-center">
-                  <Image alt="gallery" src={LifeStyle} />
+                  <Image
+                    alt="gallery"
+                    src="/chris.png"
+                    width={5000}
+                    height={3000}
+                  />
                 </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -251,8 +296,12 @@ export default function Home() {
                     Lifestyle Porfolio
                   </h1>
                   <p className="leading-relaxed">
-                    Created a responsive static website. Technologies: HTML and
-                    CSS
+                    Created a responsive static website. Technologies: HTML5
+                    CSS, and JavaScript Created a responsive static website.
+                    Technologies: HTML5 CSS, and JavaScript Created a responsive
+                    static website. Technologies: HTML5 CSS, and JavaScript
+                    Created a responsive static website. Technologies: HTML5
+                    CSS, and JavaScript
                   </p>
                 </div>
               </div>
