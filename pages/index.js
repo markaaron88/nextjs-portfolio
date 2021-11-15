@@ -1,5 +1,17 @@
 import Head from "next/head";
 import Layout from "./src/components/layout";
+import Image from "next/image";
+import code from "../public/imgs/code.jpg";
+import me from "../public/imgs/me.jpg";
+import Leewayz from "../public/imgs/index.png";
+import PetStore from "../public/imgs/pet.png";
+import VideoGame from "../public/imgs/videogame.png";
+import Movie from "../public/imgs/react.png";
+import Java from "../public/imgs/java.jpg";
+import Tool from "../public/imgs/unp.png";
+import Student from "../public/imgs/moses.png";
+import Product from "../public/imgs/justinem.png";
+import LifeStyle from "../public/imgs/chris.png";
 
 export default function Home() {
   return (
@@ -10,19 +22,17 @@ export default function Home() {
         <div className="container px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                className="object-cover object-center h-full w-full"
-                src="./imgs/code.jpg"
-              />
+              {/* <div className="object-cover object-center h-full w-full"> */}
+              <Image alt="content" src={code} />
+              {/* </div> */}
             </div>
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                  <img
+                  <Image
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src="./imgs/me.jpg"
+                    src={me}
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
@@ -61,12 +71,9 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/index.png"
-                  rel="icon"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Leewayz} rel="icon" />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     California State University, Monterey Bay Capstone
@@ -86,11 +93,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/videogame.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={VideoGame} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 ">
                     Personal Project
@@ -109,11 +114,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/pet.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={PetStore} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Freelance
@@ -132,11 +135,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/react.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Movie} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Personal
@@ -157,11 +158,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/java.jpg"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Java} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     California State University, Monterey Bay Project
@@ -181,11 +180,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/unp.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Tool} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Contract Work
@@ -205,11 +202,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/moses.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Student} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Contract Work
@@ -226,11 +221,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/justinem.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={Product} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Contract Work
@@ -247,11 +240,9 @@ export default function Home() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="./imgs/chris.png"
-                />
+                <div className="absolute inset-0 w-full h-full object-cover object-center">
+                  <Image alt="gallery" src={LifeStyle} />
+                </div>
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     Contract Work
